@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Créer des onglets</title>
+  <link rel="stylesheet" href="onglet.css">
+</head>
+<body>
+ <div class="tab">
+  <button class="link" onclick="OpenOnglet(event, 'Home')">Home</button>
+  <button class="link" onclick="OpenOnglet(event, 'Contact')">Contact</button>
+  <button class="link" onclick="OpenOnglet(event, 'Reservation')">Reservation</button>
+  <button class="link" onclick="OpenOnglet(event, 'Boutique')">Boutique</button>
+ </div>
+ <div class="content" id="Home"> 
+  <h3>Home</h3>
+  <p>Bienvenue sur la page Home</p>
+  <div class="pic">
+    <img src="img1.jpg" >
+  </div>
+ </div>
+
+ <div class="content" id="Contact"> 
+  <h3>Contact</h3>
+  <p>Bienvenue sur la page Contact</p>
+  <div class="pic">
+    <img src="img2.jpg">
+  </div>
+ </div>
+
+
+  <div class="content" id="Reservation">
+    <h3>Reservation</h3>
+    <p>Bienvenue sur la page Reservation</p>
+    <div class="pic">
+      <img src="img3.jpg" >
+    </div>
+  </div>
+
+  <div class="content" id="Boutique">
+    <h3>Boutique</h3>
+    <p>Bienvenue sur la page Boutique</p>
+    <div class="pic">
+      <img src="img4.jpg">
+    </div>
+  </div>
+
+  <script src="onglet.js"></script>
+</body>
+</html>
