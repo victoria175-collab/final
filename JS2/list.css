@@ -19,6 +19,15 @@ section{
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  animation: bottom 1s ease-in-out;
+}
+@keyframes bottom{
+  0%{
+    transform: translateY(-800px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 h1{
   text-align: center;

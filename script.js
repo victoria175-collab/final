@@ -68,30 +68,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuIcon = document.querySelector(".hamburger");
     const sidebar = document.querySelector(".container1");
     const closeIcon = document.querySelector(".close");
-    const sidebarLinks = document.querySelectorAll(".liens a"); // All sidebar links
-    const mainContent = document.querySelector(".container2"); // Main content area
+    const sidebarLinks = document.querySelectorAll(".liens a"); 
+    const mainContent = document.querySelector(".container2"); 
 
-    // Function to close sidebar
+  
     function closeSidebar() {
-        sidebar.classList.remove("show");  // Hide sidebar
-        menuIcon.style.display = "block"; // Show menu icon
+        sidebar.classList.remove("show"); 
+        menuIcon.style.display = "block"; 
     }
 
-    // Open Sidebar
+ 
     menuIcon.addEventListener("click", function () {
-        sidebar.classList.add("show");  // Show sidebar
-        menuIcon.style.display = "none"; // Hide menu icon
+        sidebar.classList.add("show");  
+        menuIcon.style.display = "none"; 
     });
 
-    // Close Sidebar when clicking the close icon
+ 
     closeIcon.addEventListener("click", closeSidebar);
 
-    // Close Sidebar when clicking any sidebar item
+   
     sidebarLinks.forEach(link => {
         link.addEventListener("click", closeSidebar);
     });
 
-    // Close Sidebar when clicking outside of it
+
     document.addEventListener("click", function (event) {
         if (!sidebar.contains(event.target) && !menuIcon.contains(event.target)) {
             closeSidebar();

@@ -38,13 +38,13 @@ function shortLinkfunction() {
         short.innerHTML = data;
         short.style.display = "block";
       } else {
-        short.innerHTML = "Invalid URL!";
+        short.innerHTML = "Lien Invalide!";
         short.style.display = "block";
         console.error("API Error:", data);
       }
     })
     .catch(error => {
-      short.innerHTML = "Request error!";
+      short.innerHTML = "Erreur survenue!";
       short.style.display = "block";
       console.error("Fetch Error:", error);
     });

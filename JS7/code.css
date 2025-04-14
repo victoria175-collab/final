@@ -20,6 +20,15 @@ section{
   background-color: #fff;
   padding: 20px;
   flex-direction: column;
+  animation: left 1.3s ease-in-out;
+}
+@keyframes left{
+  0%{
+    transform: translateX(-800px);
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
 img{
   width: 250px;

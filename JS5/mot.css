@@ -19,6 +19,15 @@ body{
   padding: 20px;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: left 1s ease-in-out;
+}
+@keyframes left{
+  0%{
+    transform: translateX(-900px);
+  }
+  100%{
+    transform: translateX(0);
+  }
 }
 form{
   display: flex;

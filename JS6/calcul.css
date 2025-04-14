@@ -27,6 +27,15 @@ section{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  animation: top 1s ease-in-out;
+}
+@keyframes top{
+  0%{
+    transform: translateY(800px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 section .calcul{
 display: flex;

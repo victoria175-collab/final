@@ -22,6 +22,15 @@ section{
   padding: 25px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
+  animation: top 1s ease-in-out;
+}
+@keyframes top{
+  0%{
+    transform: translateY(-800px);
+  }
+  100%{
+    transform: translateY(0);
+  }
 }
 .choix{
   display: flex;

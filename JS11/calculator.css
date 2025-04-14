@@ -20,6 +20,15 @@ body{
   overflow: hidden;
   margin-top: 60px;
   margin-bottom: 60px;
+  animation: start 1s ease-in-out;
+}
+@keyframes start{
+  0%{
+    transform: translate(-800px);
+  }
+  100%{
+    transform: translate(0);
+  }
 }
 #display{
   width: 100%;
